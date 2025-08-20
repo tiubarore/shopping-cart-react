@@ -10,7 +10,9 @@ export function ProductProvider({ children }) {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("/api/products");
+        const res = await fetch(
+          "https://my-json-server.typicode.com/tiubarore/shopping-cart-react/products"
+        );
         if (!res.ok) throw new Error("Error, cannot fetch the data");
         const data = await res.json();
         setProducts(data);
