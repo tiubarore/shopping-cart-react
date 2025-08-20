@@ -18,10 +18,7 @@ const ProductCard = ({ product }) => {
         <div className="card-actions justify-end">
           <div className="badge badge-outline">{product.category}</div>
         </div>
-        <button
-          onClick={() => addToCart(product)}
-          className="btn btn-secondary hover:bg-pink-700 hover:border-pink-700"
-        >
+        <button onClick={() => addToCart(product)} className="btn btn-primary">
           Add to cart
         </button>
       </div>
