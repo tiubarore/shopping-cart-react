@@ -21,7 +21,10 @@ const ProductCard = ({ product }) => {
         <div className="card-actions justify-end">
           <div className="badge badge-outline">{product.category}</div>
         </div>
-        <button onClick={() => addToCart(product)} className="btn btn-primary">
+        <button
+          onClick={() => addToCart(product)}
+          className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+        >
           Add to cart
         </button>
       </div>
