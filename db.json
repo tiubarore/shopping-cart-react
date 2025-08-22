@@ -8,7 +8,7 @@
       "quantity": 25,
       "category": "Audio",
       "rating": 4.5,
-      "image": "images/product-1.png"
+      "image": "/images/product-1.png"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "quantity": 40,
       "category": "Audio",
       "rating": 4.2,
-      "image": "images/product-2.png"
+      "image": "/images/product-2.png"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "quantity": 15,
       "category": "Wearables",
       "rating": 4.7,
-      "image": "images/product-3.png"
+      "image": "/images/product-3.png"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "quantity": 50,
       "category": "Accessories",
       "rating": 4.3,
-      "image": "images/product-4.png"
+      "image": "/images/product-4.png"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "quantity": 30,
       "category": "Accessories",
       "rating": 4.8,
-      "image": "images/product-5.png"
+      "image": "/images/product-5.png"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "quantity": 100,
       "category": "Adapters",
       "rating": 4.1,
-      "image": "images/product-6.png"
+      "image": "/images/product-6.png"
     }
   ]
 }

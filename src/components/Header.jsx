@@ -1,6 +1,7 @@
 import { useCart } from "../context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState();
@@ -11,7 +12,9 @@ const Header = () => {
     .toFixed(2);
   return (
     <header className="bg-white shadow-md p-4 flex justify-between items-center">
-      <h1 className="text-2xl font-bold text-blue-600">Armazon</h1>
+      <Link to="/">
+        <h1 className="text-2xl font-bold text-blue-600">Armazon</h1>
+      </Link>
 
       <div className="relative">
         <button
@@ -35,7 +38,10 @@ const Header = () => {
                 <>
                   <ul className="max-h-60 overflow-y-auto divide-y divide-gray-200">
                     {cart.map((item) => (
-                      <li className="flex justify-between items-center py-2">
+                      <li
+                        className="flex justify-between items-center py-2"
+                        key={item.id}
+                      >
                         <div>
                           <p className="font-semibold">{item.name}</p>
                           <p className="text-sm text-gray-500">

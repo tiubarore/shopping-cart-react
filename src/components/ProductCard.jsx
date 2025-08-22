@@ -1,13 +1,16 @@
 import { useCart } from "../context/CartContext";
+import { Link } from "react-router";
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
 
   return (
     <div className="cursor-pointer card bg-base-100  shadow-sm">
-      <figure>
-        <img src={product.image} alt={product.name} />
-      </figure>
+      <Link to={`/product/${product.id}`}>
+        <figure>
+          <img src={product.image} alt={product.name} />
+        </figure>
+      </Link>
       <div className="card-body">
         <h2 className="card-title">
           {product.name}
